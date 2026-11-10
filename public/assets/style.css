@@ -195,6 +195,10 @@ a.p-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
 .prod{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;align-items:start}
 .prod-visual{margin-bottom:24px}
 .prod-visual .p-img.xl,.prod-visual .p-img{width:100%;height:auto;aspect-ratio:4/3;border-radius:var(--radius)}
+/* Packaged products: show the full bag, never crop the brand */
+img[src*="/products/veg/"],img[src*="/products/fruit/"],img[src*="/products/smoked/"],img[src*="frozen-strawberries"]{object-fit:contain;background:#f3efe6}
+ .cat-img[src*="/products/veg/"],.cat-img[src*="/products/fruit/"],.cat-img[src*="/products/smoked/"],.cat-img[src*="frozen-strawberries"]{height:240px;padding:10px 0}
+.prod-visual img[src*="/products/veg/"],.prod-visual img[src*="/products/fruit/"],.prod-visual img[src*="/products/smoked/"],.prod-visual img[src*="frozen-strawberries"]{aspect-ratio:1/1;max-height:560px}
 .p-icon.xl{width:100%;height:220px;border-radius:var(--radius);background:linear-gradient(135deg,var(--cream),#efe7d2)}
 .p-icon.xl svg{width:120px;height:120px}
 .spec{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:15px}
@@ -254,3 +258,5 @@ a.p-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
   .quote-form{padding:20px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.prod-visual img[src*="/products/smoked/"]{aspect-ratio:4/5;max-height:640px}
+img[src*="/products/smoked/"]{background:#eef1f5}
