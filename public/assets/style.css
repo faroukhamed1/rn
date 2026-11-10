@@ -23,6 +23,7 @@ p{margin:0 0 1em}
 .bar{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:16px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
 .mark{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;border:1.5px solid var(--gold);color:var(--gold);font:700 18px/1 var(--f-body);letter-spacing:.06em}
+.logo-img{width:44px;height:44px;border-radius:10px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.12)}
 .brand-text{display:flex;flex-direction:column;line-height:1.15}
 .brand-text strong{font-size:15px;letter-spacing:.08em}
 .lang-ar .brand-text strong{letter-spacing:0;font-size:17px}
@@ -167,6 +168,9 @@ a.p-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
 .p-img{width:84px;height:84px;object-fit:cover;border-radius:12px;flex:none;background:var(--cream)}
 .cat-img{width:calc(100% + 56px);margin:-28px -28px 18px;height:180px;object-fit:cover;border-radius:var(--radius) var(--radius) 0 0;background:var(--cream)}
 .cat-card .cat-icon{margin-top:-48px;position:relative;border:3px solid #fff}
+.cat-ph{display:grid;place-items:center;background:linear-gradient(135deg,var(--cream),#efe7d2);color:var(--gold-600)}
+.cat-ph svg{width:84px;height:84px}
+.lang-ar .sci{text-align:right;unicode-bidi:isolate}
 .p-head h2 a{text-decoration:none;color:inherit}
 .p-head .push{margin-inline-start:auto;white-space:nowrap}
 .row-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
