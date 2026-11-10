@@ -166,7 +166,7 @@ a.p-card{text-decoration:none;color:inherit;transition:box-shadow .2s,transform 
 a.p-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
 .p-card .arrow{font-size:14px;margin-top:6px}
 .p-img{width:84px;height:84px;object-fit:cover;border-radius:12px;flex:none;background:var(--cream)}
-.cat-img{width:calc(100% + 56px);margin:-28px -28px 18px;height:180px;object-fit:cover;border-radius:var(--radius) var(--radius) 0 0;background:var(--cream)}
+.cat-img{display:block;max-width:none;width:calc(100% + 56px);margin:-28px -28px 18px;height:180px;object-fit:cover;border-radius:var(--radius) var(--radius) 0 0;background:var(--cream)}
 .cat-card .cat-icon{margin-top:-48px;position:relative;border:3px solid #fff}
 .cat-ph{display:grid;place-items:center;background:linear-gradient(135deg,var(--cream),#efe7d2);color:var(--gold-600)}
 .cat-ph svg{width:84px;height:84px}
