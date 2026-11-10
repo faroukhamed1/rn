@@ -1,20 +1,8 @@
-# RN-Dubai.com
+# rn-dubai.com — Rowad Alnajah website
 
-0. You need to clone the repo using git clone or using github desktop:
+Static bilingual (EN/AR) site, hosted on Vercel.
 
-```bash
-git clone https://github.com/ooohap/rn.git
-```
-
-1. You need to install all dependencies:
-
-```bash
-npm install
-```
-
-2. To run project:
-
-```bash
-npm run dev
-```
-ehab galal only 1
+- Edit text/products: `tools/content.py`
+- Rebuild pages: `python3 tools/build.py` (writes to `public/`)
+- Images: put photos in `public/images/` (`hero.jpg` = homepage background)
+- Deploy: push to GitHub `main` → Vercel deploys automatically.
