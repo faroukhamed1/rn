@@ -260,3 +260,21 @@ img[src*="/products/veg/"],img[src*="/products/fruit/"],img[src*="/products/smok
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 .prod-visual img[src*="/products/smoked/"]{aspect-ratio:4/5;max-height:640px}
 img[src*="/products/smoked/"]{background:#eef1f5}
+/* Insights */
+.art-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.art-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-decoration:none;transition:box-shadow .2s,transform .2s}
+.art-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.art-img{width:100%;height:220px;object-fit:cover;display:block;background:#eef1f5}
+.art-in{padding:24px;display:flex;flex-direction:column;gap:8px;flex:1}
+.art-in time,.page-hero time{font-size:13.5px;color:var(--gold-600);font-weight:600}
+.page-hero time{color:var(--gold)}
+.art-in h2{font-size:21px;margin:0}
+.art-in p{color:var(--muted);margin:0}
+.art-in .link{margin-top:auto;padding-top:8px}
+.art-follow{text-align:center;margin:36px 0 0}
+.art-follow .btn svg{width:18px;height:18px}
+.article{max-width:760px;font-size:17.5px}
+.article p{color:#2c3b39}
+.art-hero{width:100%;height:auto;max-height:440px;object-fit:cover;border-radius:var(--radius);margin-bottom:28px;background:#eef1f5}
+.art-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:28px 0 20px;padding-top:20px;border-top:1px solid var(--line)}
+@media (max-width:760px){.art-grid{grid-template-columns:1fr}}
