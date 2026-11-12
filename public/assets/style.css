@@ -278,3 +278,5 @@ img[src*="/products/smoked/"]{background:#eef1f5}
 .art-hero{width:100%;height:auto;max-height:440px;object-fit:cover;border-radius:var(--radius);margin-bottom:28px;background:#eef1f5}
 .art-links{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:28px 0 20px;padding-top:20px;border-top:1px solid var(--line)}
 @media (max-width:760px){.art-grid{grid-template-columns:1fr}}
+
+[hidden]{display:none!important}
